@@ -33,7 +33,7 @@ def print_condition(num_of_blockers, xrange, yrange, blockers):
     """
         Printing the condition
     """
-    print("条件：")
+    print("Condition：")
     print("NUM_OF_BLOCKERS: ", num_of_blockers)
     print("XRANGE: ", xrange)
     print("YRANGE: ", yrange)
@@ -44,6 +44,7 @@ def print_circles(circles):
     """
         Printing the circles
     """
+	print("circles: ")
     for item in circles:
         print("(x, y) -> (%10.6f, %10.6f), r -> %10.6f" % (item[0], item[1],
                                                            item[2]))
@@ -58,9 +59,9 @@ if __name__ == '__main__':
     xrange = config.XRANGE
     yrange = config.YRANGE
     num_of_circle = config.NUM_OF_CIRCLE
+	
     print_condition(num_of_blockers, xrange, yrange, blockers)
     circles = bb.ball_in_box(num_of_circle, blockers)
-    print("circles: ")
     print_circles(circles)
 
     # To determine whether or not to meet the conditions
