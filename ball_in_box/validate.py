@@ -5,6 +5,7 @@ from ball_in_box import config
 def validate(circles, blockers):
     xrange = config.XRANGE
     yrange = config.YRANGE
+	
     # Is circle in the box?
     for circle in circles:
         xmr = circle[0] - circle[2]
